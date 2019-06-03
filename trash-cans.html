@@ -1,0 +1,248 @@
+  <!doctype html>
+  <html ng-app="todoApp" >
+  <head>
+    <meta http-equiv=”Content-Type” content=”text/html; charset=utf-8″>
+    <script src="js/angular.min.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/todo.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  </head>
+  <body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="index.html"><i class="fas fa-recycle"></i> Trash's Score</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto float-right ">
+          <li class="nav-item active">
+            <a class="nav-link" href="score.html"><i class="fas fa-users"></i> Coins<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-piggy-bank"></i> Savings</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-trash"></i>  Trash cans
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a  href="trash-cans.html" class="dropdown-item"  aria-expanded="false" aria-controls="collapseOne">Blue  
+                <i class="fas fa-trash float-right" style="color: #007bff;"></i>
+              </a>
+              <a class="dropdown-item"  href="trash-cans.html">Red 
+                <i class="fas fa-trash float-right" style="color: #dc3545;"></i>
+              </a>
+              <a class="dropdown-item"  href="trash-cans.html">Green 
+                <i class="fas fa-trash float-right" style="color: #28a745;"></i>
+              </a>
+              <a class="dropdown-item"  href="trash-cans.html">Yellow 
+                <i class="fas fa-trash float-right" style="color: #ffc107;"></i>
+              </a>
+              <a class="dropdown-item"  href="trash-cans.html">Black 
+                <i class="fas fa-trash float-right" style="color: #343a40;"></i>
+              </a>
+              <a class="dropdown-item"  href="trash-cans.html">Orange 
+                <i class="fas fa-trash float-right" style="color: #fd7e14;"></i>
+              </a>
+              <a class="dropdown-item"  href="trash-cans.html">White 
+                <i class="fas fa-trash float-right" style="color: #F0F0F0;"></i>
+              </a>
+              <a class="dropdown-item"  href="trash-cans.html">Purple 
+                <i class="fas fa-trash float-right" style="color: #6f42c1;"></i>
+              </a>
+              <a class="dropdown-item"  href="trash-cans.html">Brown 
+                <i class="fas fa-trash float-right" style="color: #663a00;"></i>
+              </a>
+              <a class="dropdown-item"  href="trash-cans.html">Gray 
+                <i class="fas fa-trash float-right" style="color: #6c757d;"></i>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="trash-cans.html">Something else here</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <div class="jumbotron text-center">
+      <h1>Trash types</h1>
+    </div>
+    <div class="container mt-5 col-sm-6">
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#blue" aria-expanded="false" aria-controls="blue" style="color: #007bff;">
+                Trash Blue # <i class="fas fa-trash float-right" style="color: #007bff; font-size: 1.5em;"></i>
+              </button>
+            </h5>
+          </div>
+
+          <div id="blue" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+
+              Paper and Cardboard (Blue)
+              Items: newspapers, magazines, printed in general; Cardboard boxes and long-life packaging.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#red" aria-expanded="false" aria-controls="red" style="color: #dc3545;">
+                Trash Red # <i class="fas fa-trash float-right" style="color: #dc3545; font-size: 1.5em;"></i>
+              </button>
+            </h5>
+          </div>
+
+          <div id="red" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              Plastic (Red)
+              Items: bottles, packaging products cleaning; pots of creams and shampoos; pipes and tubes; toys; bags, bags and milk sachets; plasticised, metallized or paraffin coated papers, such as biscuit packs.
+              Tips: wash them with reuse water so that they do not rest on the products, especially in the case of detergents and shampoos, which may make it difficult to triage and take advantage of the material. In the case of packaging with lids, remove them.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#green" aria-expanded="false" aria-controls="green" style="color: #28a745;">
+                Trash Green # <i class="fas fa-trash float-right" style="color: #28a745; font-size: 1.5em;"></i>
+              </button>
+            </h5>
+          </div>
+
+          <div id="green" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              Glass (Green)
+              Items: bottles, bottles; canned glasses.
+              Tips: wash them with reuse water and remove the covers.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#yellow" aria-expanded="false" aria-controls="yellow" style="color: #ffc107;">
+                Trash Yellow # <i class="fas fa-trash float-right" style="color: #ffc107; font-size: 1.5em;"></i>
+              </button>
+            </h5>
+          </div>
+
+          <div id="yellow" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              Metal (Yellow)
+              Items: beer cans, soda and juices; frames and frames.
+              Tips: Cans should be kneaded or pressed for easy storage.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#black" aria-expanded="false" aria-controls="black" style="color: #343a40;">
+                Trash Black # <i class="fas fa-trash float-right" style="color: #343a40; font-size: 1.5em;"></i>
+              </button>
+            </h5>
+          </div>
+
+          <div id="black" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+
+              Wood (Black) Wood materials
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#orange" aria-expanded="false" aria-controls="orange" style="color: #fd7e14;">
+                Trash Orange # <i class="fas fa-trash float-right" style="color: #fd7e14; font-size: 1.5em;"></i>
+              </button>
+            </h5>
+          </div>
+
+          <div id="orange" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              Dangerous (Orange) Waste that somehow represents danger.
+            </div>
+          </div>
+        </div><div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#white" aria-expanded="false" aria-controls="white" style="color: #F0F0F0; text-shadow: #000 1px 1px;">
+                Trash White # <i class="fas fa-trash float-right" style="color: #F0F0F0; text-shadow: #000 1px 1px; font-size: 1.5em;"></i>
+              </button>
+            </h5>
+          </div>
+
+          <div id="white" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              Waste used in surgeries and other hospital procedures.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#purple" aria-expanded="false" aria-controls="purple" style="color: #6f42c1;">
+                Trash Purple # <i class="fas fa-trash float-right" style="color: #6f42c1; font-size: 1.5em;"></i>
+              </button>
+            </h5>
+          </div>
+
+          <div id="purple" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+
+              All types of radioactive waste or that represent some danger of chemical infection.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#brown" aria-expanded="false" aria-controls="brown" style="color: #663a00;">
+                Trash Brown # <i class="fas fa-trash float-right" style="color: #663a00; font-size: 1.5em;"></i>
+              </button>
+            </h5>
+          </div>
+
+          <div id="brown" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              All material derived organically, everything that is directly organic, because this type of material can not be recycled.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#gray" aria-expanded="false" aria-controls="gray" style="color: #6c757d;">
+                Trash Gray # <i class="fas fa-trash float-right" style="color: #6c757d; font-size: 1.5em;"></i>
+              </button>
+            </h5>
+          </div>
+
+          <div id="gray" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              General waste that can not be recycled, such as hospital waste, plastic materials, syringes, etc.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>

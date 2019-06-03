@@ -1,0 +1,128 @@
+  <!doctype html>
+  <html ng-app="todoApp" >
+  <head>
+    <meta http-equiv=”Content-Type” content=”text/html; charset=utf-8″>
+    <script src="js/angular.min.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/todo.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  </head>
+  <body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="index.html"><i class="fas fa-recycle"></i> Trash's Score</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto float-right ">
+          <li class="nav-item active">
+            <a class="nav-link" href="score.html"><i class="fas fa-users"></i> Coins<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-piggy-bank"></i> Savings</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-trash"></i>  Trash cans
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a  href="trash-cans.html" class="dropdown-item"  aria-expanded="false" aria-controls="collapseOne">Blue  
+                <i class="fas fa-trash float-right" style="color: #007bff;"></i>
+              </a>
+              <a class="dropdown-item"  href="trash-cans.html">Red 
+                <i class="fas fa-trash float-right" style="color: #dc3545;"></i>
+              </a>
+              <a class="dropdown-item"  href="trash-cans.html">Green 
+                <i class="fas fa-trash float-right" style="color: #28a745;"></i>
+              </a>
+              <a class="dropdown-item"  href="trash-cans.html">Yellow 
+                <i class="fas fa-trash float-right" style="color: #ffc107;"></i>
+              </a>
+              <a class="dropdown-item"  href="trash-cans.html">Black 
+                <i class="fas fa-trash float-right" style="color: #343a40;"></i>
+              </a>
+              <a class="dropdown-item"  href="trash-cans.html">Orange 
+                <i class="fas fa-trash float-right" style="color: #fd7e14;"></i>
+              </a>
+              <a class="dropdown-item"  href="trash-cans.html">White 
+                <i class="fas fa-trash float-right" style="color: #F0F0F0;"></i>
+              </a>
+              <a class="dropdown-item"  href="trash-cans.html">Purple 
+                <i class="fas fa-trash float-right" style="color: #6f42c1;"></i>
+              </a>
+              <a class="dropdown-item"  href="trash-cans.html">Brown 
+                <i class="fas fa-trash float-right" style="color: #663a00;"></i>
+              </a>
+              <a class="dropdown-item"  href="trash-cans.html">Gray 
+                <i class="fas fa-trash float-right" style="color: #6c757d;"></i>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="trash-cans.html">Something else here</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    <div class="jumbotron text-center">
+      <h1>Score points</h1>
+    </div>
+
+
+    <main role="main" class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content container">
+      <div class=" mt-5 mx-auto">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Age</th>
+              <th scope="col">Score</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>19</td>
+              <td>500,00</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>60</td>
+              <td>263,45</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry</td>
+              <td>13</td>
+              <td>789,12</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+    </main>
+
+    <footer class="container py-5">
+      <div class="row">
+        <div class="col-12 col-sm" style="text-align: center;">
+          <small>&copy; 2019 Trash's Score. Todos os direitos reservados.</small>
+        </div>
+      </div> 
+    </footer>
+  </body>
+  </html>
+
